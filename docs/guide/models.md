@@ -181,3 +181,4 @@ outline: deep
 - 模型 ID 中的 `[官方8折]`、`[0.4x]`、`[7r:1$]`、`[按量]` 等即对应的计费方式与渠道折扣，与上表价格一致
 - 表格中同价的「`-thinking`」版本与「无后缀」版本均为独立可调用的模型 ID，按上表价格计费
 - Claude 系列同时支持 Anthropic 接口（`/v1/messages`），Gemini 系列支持 Gemini 原生接口（`/v1beta/models/{model}:generateContent`），其余场景用 OpenAI 兼容接口（`/v1/chat/completions`）即可
+- OpenAI 的新版 **Responses API**（`/v1/responses`）也可用：**Gemini / Grok / DeepSeek / GLM / Kimi / MiniMax 支持**（含流式）；**Claude 全系暂不支持**（会返回 `not implemented`），请改用 `/v1/chat/completions` 或 `/v1/messages`
