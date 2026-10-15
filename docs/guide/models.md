@@ -27,16 +27,16 @@ outline: deep
 | --- | --- | --- | --- |
 | Claude 5.1 Fable | `claude-fable-5-1` | ¥20 / ¥100 | $10 / $50 |
 | Claude 5 Fable | `claude-fable-5` | ¥20 / ¥100 | $10 / $50 |
-| Claude 5.5 Opus | `claude-opus-5-5` | ¥8 / ¥40 | $4 / $20 |
-| Claude 5 Opus | `claude-opus-5` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.8 Opus<br>Claude 4.7 Opus<br>Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-8`<br>`claude-opus-4-7`<br>`claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.5 Opus | `claude-opus-4-5-20251101`<br>`claude-opus-4-5-20251101-thinking` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.1 Opus<br>Claude 4 Opus | `claude-opus-4-1-20250805`<br>`claude-opus-4-1-20250805-thinking`<br>`claude-opus-4-20250514`<br>`claude-opus-4-20250514-thinking` | ¥30 / ¥150 | $15 / $75 |
 | Claude 5.5 Sonnet | `claude-sonnet-5-5` | ¥4 / ¥20 | $2 / $10 |
 | Claude 5 Sonnet | `claude-sonnet-5` | ¥4 / ¥20 | $2 / $10 |
-| Claude 4.6 Sonnet<br>Claude 4.5 Sonnet<br>Claude 4 Sonnet<br>Claude 3.7 Sonnet<br>Claude 3.5 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking`<br>`claude-sonnet-4-5-20250929`<br>`claude-sonnet-4-5-20250929-thinking`<br>`claude-sonnet-4-20250514`<br>`claude-sonnet-4-20250514-thinking`<br>`claude-3-7-sonnet-20250219`<br>`claude-3-7-sonnet-20250219-thinking`<br>`claude-3-5-sonnet-20241022` | ¥6 / ¥30 | $3 / $15 |
+| Claude 5.5 Opus | `claude-opus-5-5` | ¥8 / ¥40 | $4 / $20 |
+| Claude 5 Opus<br>Claude 4.8 Opus<br>Claude 4.7 Opus | `claude-opus-5`<br>`claude-opus-4-8`<br>`claude-opus-4-7` | ¥10 / ¥50 | $5 / $25 |
+| Claude 4.6 Opus<Badge type="tip" text="个人推荐" /><br>Claude 4.5 Opus | `claude-opus-4-6`<br>`claude-opus-4-6-thinking`<br>`claude-opus-4-5-20251101`<br>`claude-opus-4-5-20251101-thinking` | ¥10 / ¥50 | $5 / $25 |
+| Claude 4.6 Sonnet<br>Claude 4.5 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking`<br>`claude-sonnet-4-5-20250929`<br>`claude-sonnet-4-5-20250929-thinking` | ¥6 / ¥30 | $3 / $15 |
 | Claude 5.5 Haiku | `claude-haiku-5-5` | ¥0.2 / ¥1<br><small>上下文 >100K：¥1 / ¥5</small> | $0.1 / $0.5 |
 | Claude 4.5 Haiku | `claude-haiku-4-5-20251001` | ¥2 / ¥10 | $1 / $5 |
+| Claude 4.1 Opus<br>Claude 4 Opus | `claude-opus-4-1-20250805`<br>`claude-opus-4-1-20250805-thinking`<br>`claude-opus-4-20250514`<br>`claude-opus-4-20250514-thinking` | ¥30 / ¥150 | $15 / $75 |
+| Claude 4 Sonnet<br>Claude 3.7 Sonnet<br>Claude 3.5 Sonnet | `claude-sonnet-4-20250514`<br>`claude-sonnet-4-20250514-thinking`<br>`claude-3-7-sonnet-20250219`<br>`claude-3-7-sonnet-20250219-thinking`<br>`claude-3-5-sonnet-20241022` | ¥6 / ¥30 | $3 / $15 |
 
 > **缓存计费**：Claude 系列支持 prompt caching。**缓存读取（命中）**按输入价的 **10%** 计费；其中 Claude 5.5 Opus / Sonnet 为 **5%**，Claude 5.1 Fable 为 **2.5%**。**缓存写入（5 分钟）**为输入价的 **125%**；Claude 5.5 系列与 Claude 5.1 Fable 另外支持 **1 小时缓存写入**，按输入价的 **200%** 计费。缓存按提示词前缀匹配，前缀内容有任何变动即失效。
 
@@ -50,9 +50,11 @@ outline: deep
 | Claude 5 Fable | `Claude-5-Fable/Anthropic [7r:1$][按量][官方API]` | ¥70 / ¥350 | $10 / $50 |
 | Claude 5.5 Opus | `Claude-5-5-Opus/Anthropic [7r:1$][按量][官方API]` | ¥28 / ¥140 | $4 / $20 |
 | Claude 5 Opus | `Claude-5-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
-| Claude 4.8 Opus<br>Claude 4.7 Opus<br>Claude 4.6 Opus | `Claude-4-8-Opus/Anthropic [7r:1$][按量][官方API]`<br>`Claude-4-7-Opus/Anthropic [7r:1$][按量][官方API]`<br>`Claude-4-6-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
 | Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥14 / ¥70 | $2 / $10 |
 | Claude 5 Sonnet | `Claude-5-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥14 / ¥70 | $2 / $10 |
+| Claude 4.8 Opus | `Claude-4-8-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
+| Claude 4.7 Opus | `Claude-4-7-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
+| Claude 4.6 Opus | `Claude-4-6-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
 | Claude 4.6 Sonnet | `Claude-4-6-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥21 / ¥105 | $3 / $15 |
 
 > 缓存：读取按输入价 10%（Claude 5.5 系列 5%、Claude 5.1 Fable 2.5%），写入 125%。
@@ -64,10 +66,12 @@ outline: deep
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
 | Claude 5.5 Opus | `Claude-5-5-Opus/Kiro [0.4x][按量]` | ¥1.6 / ¥8 | $4 / $20 |
-| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 | Claude 5 Opus | `Claude-5-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
+| Claude 4.8 Opus | `Claude-4-8-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
+| Claude 4.7 Opus | `Claude-4-7-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
+| Claude 4.6 Opus | `Claude-4-6-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
+| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 | Claude 5 Sonnet | `Claude-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
-| Claude 4.8 Opus<br>Claude 4.7 Opus<br>Claude 4.6 Opus | `Claude-4-8-Opus/Kiro [0.4x][按量]`<br>`Claude-4-7-Opus/Kiro [0.4x][按量]`<br>`Claude-4-6-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
 
 > 缓存：读取按输入价 10%（Claude 5.5 系列 5%），写入 125%（Claude 5.5 系列另支持 1 小时缓存写入 200%）。
 
@@ -105,11 +109,11 @@ outline: deep
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
-| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56<br><small>2026-12-01 起：¥22.4 / ¥112</small> | $2 / $10<br><small>起：$4 / $20</small> |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21<br><small>2027-01-01 起：¥8.4 / ¥42</small> | $0.75 / $3.75<br><small>起：$1.50 / $7.50</small> |
 | Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash | 同 Gemini 3.8 Flash |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash（无 1 小时缓存写入） | 同 Gemini 3.8 Flash |
 | Gemini 3.5 Flash | `Gemini-3.5-Flash [按量][官方API/8折]` | ¥8.4 / ¥50.4 | $1.50 / $9 |
+| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56<br><small>2026-12-01 起：¥22.4 / ¥112</small> | $2 / $10<br><small>起：$4 / $20</small> |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro [按量][官方API/8折]` | ¥11.2 / ¥67.2（≤200K）<br>¥22.4 / ¥100.8（>200K） | $2 / $12<br>$4 / $18 |
 | Gemini 2.5 Pro | `Gemini-2.5-Pro [按量][官方API/8折]` | ¥7 / ¥56（≤200K）<br>¥14 / ¥84（>200K） | $1.25 / $10<br>$2.50 / $15 |
 
@@ -125,10 +129,10 @@ outline: deep
 
 | 模型 ID | 计费时段 | 输入<br><small>缓存命中</small> | 输入<br><small>缓存未命中</small> | 输出 |
 | --- | --- | --- | --- | --- |
-| `DeepSeek-V4-Pro [官方8折][按量]` | 空闲时段 | ¥0.12（¥0.15） | ¥3.6（¥4.5） | ¥10.8（¥13.5） |
-| | 高峰时段 | ¥0.24（¥0.30） | ¥7.2（¥9） | ¥21.6（¥27） |
 | `DeepSeek-V4.1-Flash [官方8折][按量]` | 空闲时段 | ¥0.016（¥0.02） | ¥0.8（¥1） | ¥3.2（¥4） |
 | | 高峰时段 | ¥0.032（¥0.04） | ¥1.6（¥2） | ¥6.4（¥8） |
+| `DeepSeek-V4-Pro [官方8折][按量]` | 空闲时段 | ¥0.12（¥0.15） | ¥3.6（¥4.5） | ¥10.8（¥13.5） |
+| | 高峰时段 | ¥0.24（¥0.30） | ¥7.2（¥9） | ¥21.6（¥27） |
 
 > 高峰时段为北京时间**周一至周五（不含中国法定节假日）9:00-12:00、14:00-18:00**；其余时段，包括周末与法定节假日全天，均为空闲时段，价格约为高峰时段的一半。单位：¥/百万 token，价格格式为**优惠价（官方价）**。官方价来源：[DeepSeek 官方价格表](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)。
 
