@@ -4,7 +4,7 @@ outline: deep
 
 # 模型列表
 
-> 本站 API 提供的模型一览（站内共 **91** 个模型 ID）。所有模型均可使用 OpenAI 兼容接口（Chat Completions），可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
+> 本站 API 提供的模型一览（站内共 **91** 个模型 ID）。所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
