@@ -25,15 +25,15 @@ outline: deep
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
+| Claude 5.5 Opus | `claude-opus-5-5` | ¥8 / ¥40 | $4 / $20 |
+| Claude 5.5 Sonnet | `claude-sonnet-5-5` | ¥4 / ¥20 | $2 / $10 |
+| Claude 5.5 Haiku | `claude-haiku-5-5` | ¥0.2 / ¥1<br><small>上下文 >100K：¥1 / ¥5</small> | $0.1 / $0.5 |
 | Claude 5.1 Fable | `claude-fable-5-1` | ¥20 / ¥100 | $10 / $50 |
 | Claude 5 Fable | `claude-fable-5` | ¥20 / ¥100 | $10 / $50 |
-| Claude 5.5 Sonnet | `claude-sonnet-5-5` | ¥4 / ¥20 | $2 / $10 |
 | Claude 5 Sonnet | `claude-sonnet-5` | ¥4 / ¥20 | $2 / $10 |
-| Claude 5.5 Opus | `claude-opus-5-5` | ¥8 / ¥40 | $4 / $20 |
 | Claude 5 Opus<br>Claude 4.8 Opus<br>Claude 4.7 Opus | `claude-opus-5`<br>`claude-opus-4-8`<br>`claude-opus-4-7` | ¥10 / ¥50 | $5 / $25 |
 | Claude 4.6 Opus<Badge type="tip" text="个人推荐" /><br>Claude 4.5 Opus | `claude-opus-4-6`<br>`claude-opus-4-6-thinking`<br>`claude-opus-4-5-20251101`<br>`claude-opus-4-5-20251101-thinking` | ¥10 / ¥50 | $5 / $25 |
 | Claude 4.6 Sonnet<br>Claude 4.5 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking`<br>`claude-sonnet-4-5-20250929`<br>`claude-sonnet-4-5-20250929-thinking` | ¥6 / ¥30 | $3 / $15 |
-| Claude 5.5 Haiku | `claude-haiku-5-5` | ¥0.2 / ¥1<br><small>上下文 >100K：¥1 / ¥5</small> | $0.1 / $0.5 |
 | Claude 4.5 Haiku | `claude-haiku-4-5-20251001` | ¥2 / ¥10 | $1 / $5 |
 | Claude 4.1 Opus<br>Claude 4 Opus | `claude-opus-4-1-20250805`<br>`claude-opus-4-1-20250805-thinking`<br>`claude-opus-4-20250514`<br>`claude-opus-4-20250514-thinking` | ¥30 / ¥150 | $15 / $75 |
 | Claude 4 Sonnet<br>Claude 3.7 Sonnet<br>Claude 3.5 Sonnet | `claude-sonnet-4-20250514`<br>`claude-sonnet-4-20250514-thinking`<br>`claude-3-7-sonnet-20250219`<br>`claude-3-7-sonnet-20250219-thinking`<br>`claude-3-5-sonnet-20241022` | ¥6 / ¥30 | $3 / $15 |
@@ -46,11 +46,11 @@ outline: deep
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
+| Claude 5.5 Opus | `Claude-5-5-Opus/Anthropic [7r:1$][按量][官方API]` | ¥28 / ¥140 | $4 / $20 |
+| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥14 / ¥70 | $2 / $10 |
 | Claude 5.1 Fable | `Claude-5-1-Fable/Anthropic [7r:1$][按量][官方API]` | ¥70 / ¥350 | $10 / $50 |
 | Claude 5 Fable | `Claude-5-Fable/Anthropic [7r:1$][按量][官方API]` | ¥70 / ¥350 | $10 / $50 |
-| Claude 5.5 Opus | `Claude-5-5-Opus/Anthropic [7r:1$][按量][官方API]` | ¥28 / ¥140 | $4 / $20 |
 | Claude 5 Opus | `Claude-5-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
-| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥14 / ¥70 | $2 / $10 |
 | Claude 5 Sonnet | `Claude-5-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥14 / ¥70 | $2 / $10 |
 | Claude 4.8 Opus | `Claude-4-8-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
 | Claude 4.7 Opus | `Claude-4-7-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
@@ -97,8 +97,8 @@ outline: deep
 
 | 模型 ID | 计费 |
 | --- | --- |
-| `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
 | `Gemini-4-Argon/Antigravity` | 8 额度 / 次（约 ¥0.48） |
+| `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
 
 > 「额度」是站内计价单位：**100 额度 = ¥6**（1 额度 = ¥0.06）；实际扣费以站内账单为准。
 > 这两个模型在**官方 API 渠道也有**，但计费方式和单价不同，客户端里用哪个以你的需求为准。
@@ -109,11 +109,11 @@ outline: deep
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
+| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56<br><small>2026-12-01 起：¥22.4 / ¥112</small> | $2 / $10<br><small>起：$4 / $20</small> |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21<br><small>2027-01-01 起：¥8.4 / ¥42</small> | $0.75 / $3.75<br><small>起：$1.50 / $7.50</small> |
 | Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash | 同 Gemini 3.8 Flash |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash（无 1 小时缓存写入） | 同 Gemini 3.8 Flash |
 | Gemini 3.5 Flash | `Gemini-3.5-Flash [按量][官方API/8折]` | ¥8.4 / ¥50.4 | $1.50 / $9 |
-| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56<br><small>2026-12-01 起：¥22.4 / ¥112</small> | $2 / $10<br><small>起：$4 / $20</small> |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro [按量][官方API/8折]` | ¥11.2 / ¥67.2（≤200K）<br>¥22.4 / ¥100.8（>200K） | $2 / $12<br>$4 / $18 |
 | Gemini 2.5 Pro | `Gemini-2.5-Pro [按量][官方API/8折]` | ¥7 / ¥56（≤200K）<br>¥14 / ¥84（>200K） | $1.25 / $10<br>$2.50 / $15 |
 
