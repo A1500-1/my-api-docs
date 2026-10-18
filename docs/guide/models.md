@@ -4,7 +4,7 @@ outline: deep
 
 # 模型列表
 
-> 本站 API 提供的模型一览（站内共 **91** 个模型 ID）。所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
+> 本站 API 提供的模型一览（站内共 **63** 个模型 ID）。所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
@@ -13,7 +13,7 @@ outline: deep
 水秋喵的小店开了很久，经过各种磨难(主要是A/制造的)，形成了一个较为混乱的计费体系。
 下文将带您轻松的了解本站的模型和计费规则，后续可能会计划更新为中转站。
 
-> 价格单位：**元 / 百万 token**。表格里「优惠价」是你实际支付的价格，「官方价」是各厂商官网的定价，仅作对照；官方调价频繁，以官网为准。本页核对于 2026-10-15。
+> 价格单位：**元 / 百万 token**。表格里「优惠价」是你实际支付的价格，「官方价」是各厂商官网的定价，仅作对照；官方调价频繁，以官网为准。本页核对于 2026-10-18。
 
 ## Claude 系列
 
@@ -32,11 +32,8 @@ outline: deep
 | Claude 5 Fable | `claude-fable-5` | ¥20 / ¥100 | $10 / $50 |
 | Claude 5 Sonnet | `claude-sonnet-5` | ¥4 / ¥20 | $2 / $10 |
 | Claude 5 Opus<br>Claude 4.8 Opus<br>Claude 4.7 Opus | `claude-opus-5`<br>`claude-opus-4-8`<br>`claude-opus-4-7` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.6 Opus<Badge type="tip" text="个人推荐" /><br>Claude 4.5 Opus | `claude-opus-4-6`<br>`claude-opus-4-6-thinking`<br>`claude-opus-4-5-20251101`<br>`claude-opus-4-5-20251101-thinking` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.6 Sonnet<br>Claude 4.5 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking`<br>`claude-sonnet-4-5-20250929`<br>`claude-sonnet-4-5-20250929-thinking` | ¥6 / ¥30 | $3 / $15 |
-| Claude 4.5 Haiku | `claude-haiku-4-5-20251001` | ¥2 / ¥10 | $1 / $5 |
-| Claude 4.1 Opus<br>Claude 4 Opus | `claude-opus-4-1-20250805`<br>`claude-opus-4-1-20250805-thinking`<br>`claude-opus-4-20250514`<br>`claude-opus-4-20250514-thinking` | ¥30 / ¥150 | $15 / $75 |
-| Claude 4 Sonnet<br>Claude 3.7 Sonnet<br>Claude 3.5 Sonnet | `claude-sonnet-4-20250514`<br>`claude-sonnet-4-20250514-thinking`<br>`claude-3-7-sonnet-20250219`<br>`claude-3-7-sonnet-20250219-thinking`<br>`claude-3-5-sonnet-20241022` | ¥6 / ¥30 | $3 / $15 |
+| Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
+| Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking` | ¥6 / ¥30 | $3 / $15 |
 
 > **缓存计费**：Claude 系列支持 prompt caching。**缓存读取（命中）**按输入价的 **10%** 计费；其中 Claude 5.5 Opus / Sonnet 为 **5%**，Claude 5.1 Fable 为 **2.5%**。**缓存写入（5 分钟）**为输入价的 **125%**；Claude 5.5 系列与 Claude 5.1 Fable 另外支持 **1 小时缓存写入**，按输入价的 **200%** 计费。缓存按提示词前缀匹配，前缀内容有任何变动即失效。
 
