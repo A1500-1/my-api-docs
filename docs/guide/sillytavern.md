@@ -19,7 +19,7 @@ outline: deep
 ## 1. 准备工作
 
 - 一个已经部署好的酒馆（不会部署？[看宝宝教程](https://sqivg8d05rm.feishu.cn/wiki/MjmdwyjpRihXabkrhMkchcMhnEh)）
-- 一个 API 服务商的 API 地址和密钥（[水秋喵的小店购买后会在消息中显示](https://item.taobao.com/item.htm?ft=t&id=1063386359204)）
+- 一个 API 服务商的 API 地址和密钥（[水秋喵的小店](https://shop356416683.taobao.com/)购买，自动发货，密钥通过淘宝消息发送；详见[购买与套餐](/buy)）
 
 ## 2. 连接
 

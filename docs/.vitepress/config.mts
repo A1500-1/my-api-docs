@@ -1,10 +1,35 @@
 import { defineConfig } from 'vitepress'
 
+const SITE_URL = 'https://doc.meow61.my'
+const SITE_NAME = '水秋喵 API使用教程'
+const SITE_DESC = '酒馆、ChatBox、CC Switch、Cherry Studio、RikkaHub 等常见平台的 API 使用教程，附完整模型列表与价格'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "水秋喵 API使用教程",
+  title: SITE_NAME,
   // 自定义域名部署，站点位于根路径
   base: '/',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: SITE_NAME }],
+    ['meta', { property: 'og:image', content: `${SITE_URL}/og.png` }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${SITE_URL}/og.png` }]
+  ],
+  transformHead({ pageData }) {
+    const path = pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '')
+    const title = pageData.frontmatter.title || pageData.title
+    const desc = pageData.frontmatter.description || pageData.description || SITE_DESC
+    return [
+      ['meta', { property: 'og:url', content: `${SITE_URL}/${path}` }],
+      ['meta', { property: 'og:title', content: title ? `${title}｜${SITE_NAME}` : SITE_NAME }],
+      ['meta', { property: 'og:description', content: desc }]
+    ]
+  },
   vite: {
     server: {
       watch: {
@@ -30,11 +55,13 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: 'API使用教程', link: '/guide/' },
       { text: '模型列表', link: '/guide/models' },
+      { text: '购买与套餐', link: '/buy' },
       { text: '水秋喵的小店', link: 'https://shop356416683.taobao.com/' }
     ],
 
     sidebar: [
       { text: '模型列表', link: '/guide/models' },
+      { text: '购买与套餐', link: '/buy' },
       {
         text: 'API使用教程',
         link: '/guide/',

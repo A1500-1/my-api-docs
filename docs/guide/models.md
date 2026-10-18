@@ -4,9 +4,17 @@ outline: deep
 
 # 模型列表
 
-> 本站 API 提供的模型一览（站内共 **63** 个模型 ID）。所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
+> 本站 API 提供的模型一览。\
+> 所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。\
+> 可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
+
+::: tip 先记住这条换算
+**100 额度 = 6 块钱**，1 额度就是 6 分。
+
+查询站（[check.meow61.my](https://check.meow61.my)）上的金额是额度、写成 `$`：看到的数字乘 0.06 就是人民币。比如显示 `$9.88`，实际花了 0.59 元。
+:::
 
 ## 先道歉喵
 
@@ -35,7 +43,7 @@ outline: deep
 | Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
 | Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking` | ¥6 / ¥30 | $3 / $15 |
 
-> **缓存计费**：Claude 系列支持 prompt caching。**缓存读取（命中）**按输入价的 **10%** 计费；其中 Claude 5.5 Opus / Sonnet 为 **5%**，Claude 5.1 Fable 为 **2.5%**。**缓存写入（5 分钟）**为输入价的 **125%**；Claude 5.5 系列与 Claude 5.1 Fable 另外支持 **1 小时缓存写入**，按输入价的 **200%** 计费。缓存按提示词前缀匹配，前缀内容有任何变动即失效。
+> **缓存计费**：Claude 系列支持 prompt caching。<strong>缓存读取（命中）</strong>按输入价的 **10%** 计费；其中 Claude 5.5 Opus / Sonnet 为 **5%**，Claude 5.1 Fable 为 **2.5%**。<strong>缓存写入（5 分钟）</strong>为输入价的 **125%**；Claude 5.5 系列与 Claude 5.1 Fable 另外支持 **1 小时缓存写入**，按输入价的 **200%** 计费。缓存按提示词前缀匹配，前缀内容有任何变动即失效。
 
 ### Anthropic 渠道
 
@@ -92,13 +100,12 @@ outline: deep
 
 走 Google Antigravity 平台，**按调用次数**扣费，不按 token：
 
-| 模型 ID | 计费 |
-| --- | --- |
-| `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
-| `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
+| 模型版本 | 模型 ID | 计费 |
+| --- | --- | --- |
+| Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
+| Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
 
-> 「额度」是站内计价单位：**100 额度 = ¥6**（1 额度 = ¥0.06）；实际扣费以站内账单为准。
-> 这两个模型在**官方 API 渠道也有**，但计费方式和单价不同，客户端里用哪个以你的需求为准。
+> 这两个模型在**官方 API 渠道也有**，那边按 token 计费，单价不同。
 
 ### 官方 API 渠道（按量计费）
 
@@ -144,9 +151,9 @@ outline: deep
 
 ### Kimi
 
-| 模型 ID | 输入<br><small>缓存命中</small> | 输入<br><small>缓存未命中</small> | 输出 | 上下文窗口 |
-| --- | --- | --- | --- | --- |
-| `Kimi-K3 [官方8折][按量]` | ¥1.6（¥2） | ¥16（¥20） | ¥80（¥100） | 1M |
+| 模型 ID | 输入<br><small>缓存命中</small> | 输入<br><small>缓存未命中</small> | 输出 |
+| --- | --- | --- | --- |
+| `Kimi-K3 [官方8折][按量]` | ¥1.6（¥2） | ¥16（¥20） | ¥80（¥100） |
 
 > 单位：¥/百万 token，价格格式为**优惠价（官方价）**。Kimi K3 另外单独收取**缓存写入**费用：5 分钟档 ¥16、1 小时档 ¥32（官方分别为 ¥20 / ¥40）。官方价来源：[Kimi 官方定价文档](https://platform.kimi.com/docs/pricing/chat)。
 
@@ -173,8 +180,6 @@ outline: deep
 - 具体接入方法见 [API使用教程](./)
 - 客户端模型列表为空时，可手动输入模型的 ID
 - 价格以购买页面实际显示为准
-- 余额和调用记录在密钥查询站查看：[check.meow61.my](https://check.meow61.my)
-- 该站显示的金额单位是「额度」，页面上写成 `$`：**100 额度 = ¥6**。换算方法就是**页面上的数字 × 0.06 = 人民币**（例：显示扣了 `$9.88`，实付 ¥0.59）
 - 模型 ID 中的 `[官方8折]`、`[0.4x]`、`[7r:1$]`、`[按量]` 等即对应的计费方式与渠道折扣，与上表价格一致
 - 表格中同价的「`-thinking`」版本与「无后缀」版本均为独立可调用的模型 ID，按上表价格计费
 - Claude 系列同时支持 Anthropic 接口（`/v1/messages`），Gemini 系列支持 Gemini 原生接口（`/v1beta/models/{model}:generateContent`），其余场景用 OpenAI 兼容接口（`/v1/chat/completions`）即可

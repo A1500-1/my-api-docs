@@ -44,6 +44,12 @@ features:
 
 <div class="tools-grid">
 
+<a class="tool-card" href="/buy">
+  <div class="tool-title">购买与套餐</div>
+  <div class="tool-desc">额度卡四档、Gemini 半价天卡、买完怎么用</div>
+  <div class="tool-link">/buy →</div>
+</a>
+
 <a class="tool-card" href="https://check.meow61.my">
   <div class="tool-title">密钥查询</div>
   <div class="tool-desc">查询 API 密钥的剩余额度和调用日志</div>

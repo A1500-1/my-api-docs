@@ -10,7 +10,7 @@ outline: deep
 
 - 一台 Android 设备
 - 安装 Rikka（[官方网站](https://rikka-ai.com/) 下载 APK，或 Google Play 商店）
-- 一个 API 服务商的 API 地址和密钥（[水秋喵的小店购买后会在消息中显示](https://item.taobao.com/item.htm?ft=t&id=1063386359204)）
+- 一个 API 服务商的 API 地址和密钥（[水秋喵的小店](https://shop356416683.taobao.com/)购买，自动发货，密钥通过淘宝消息发送；详见[购买与套餐](/buy)）
 
 ## 2. 添加服务商
 
