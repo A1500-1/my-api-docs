@@ -97,7 +97,7 @@ outline: deep
 
 | 模型 ID | 计费 |
 | --- | --- |
-| `Gemini-4-Argon/Antigravity` | 8 额度 / 次（约 ¥0.48） |
+| `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
 
 > 「额度」是站内计价单位：**100 额度 = ¥6**（1 额度 = ¥0.06）；实际扣费以站内账单为准。
