@@ -73,7 +73,31 @@ export default defineConfig({
           { text: 'RikkaHub', link: '/guide/rikkahub' }
         ]
       }
-    ]
+    ],
+
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
+          modal: {
+            displayDetails: '显示详情',
+            resetButtonTitle: '清空',
+            backButtonTitle: '返回',
+            noResultsText: '没有找到相关内容',
+            footer: {
+              selectText: '选择',
+              selectKeyAriaLabel: '回车',
+              navigateText: '切换',
+              navigateUpKeyAriaLabel: '上',
+              navigateDownKeyAriaLabel: '下',
+              closeText: '关闭',
+              closeKeyAriaLabel: 'Esc'
+            }
+          }
+        }
+      }
+    }
 
     // 如需展示店铺/联系方式，在这里加 socialLinks，例如：
     // socialLinks: [

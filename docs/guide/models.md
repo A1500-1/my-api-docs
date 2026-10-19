@@ -10,18 +10,17 @@ outline: deep
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
-::: tip 先记住这条换算
-**100 额度 = 6 块钱**，1 额度就是 6 分。
+::: tip 剩余额度与使用记录查询
+地址：[https://check.meow61.my](https://check.meow61.my)
 
-查询站（[check.meow61.my](https://check.meow61.my)）上的金额是额度、写成 `$`：看到的数字乘 0.06 就是人民币。比如显示 `$9.88`，实际花了 0.59 元。
+金额单位为额度，100 额度 = 6 元，例如 $10 实际为 0.6 元。
 :::
 
-## 先道歉喵
+## 价格怎么看
 
-水秋喵的小店开了很久，经过各种磨难(主要是A/制造的)，形成了一个较为混乱的计费体系。
-下文将带您轻松的了解本站的模型和计费规则，后续可能会计划更新为中转站。
+表格价格单位是**元 / 百万 token**。「优惠价」是你实付的价；「官方价」是官网标价，方便对比。
 
-> 价格单位：**元 / 百万 token**。表格里「优惠价」是你实际支付的价格，「官方价」是各厂商官网的定价，仅作对照；官方调价频繁，以官网为准。本页核对于 2026-10-18。
+以上价格于 2026-10-18 核对。
 
 ## Claude 系列
 
@@ -43,7 +42,10 @@ outline: deep
 | Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
 | Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking` | ¥6 / ¥30 | $3 / $15 |
 
-> **缓存计费**：Claude 系列支持 prompt caching。<strong>缓存读取（命中）</strong>按输入价的 **10%** 计费；其中 Claude 5.5 Opus / Sonnet 为 **5%**，Claude 5.1 Fable 为 **2.5%**。<strong>缓存写入（5 分钟）</strong>为输入价的 **125%**；Claude 5.5 系列与 Claude 5.1 Fable 另外支持 **1 小时缓存写入**，按输入价的 **200%** 计费。缓存按提示词前缀匹配，前缀内容有任何变动即失效。
+> **缓存读取（命中）**：输入价的 10%，Claude 5.5 Opus / Sonnet 5%，Claude 5.1 Fable 2.5%。\
+> **缓存写入（5 分钟）**：输入价的 125%；Claude 5.5 系列与 5.1 Fable 支持 1 小时，200%。
+>
+> 缓存按提示词前缀匹配，前缀内容有任何变动即失效。
 
 ### Anthropic 渠道
 
@@ -94,40 +96,42 @@ outline: deep
 
 ## Gemini
 
-本站 Gemini 有**两个渠道**，计费方式不同，请注意区分：
+本站 Gemini 有两个官方渠道，计费方式不同，请注意区分：
 
-### Antigravity 渠道（按次计费）
+### Antigravity（反重力）渠道
 
-走 Google Antigravity 平台，**按调用次数**扣费，不按 token：
+仅按调用次数计费。
 
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
 | Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
 
-> 这两个模型在**官方 API 渠道也有**，那边按 token 计费，单价不同。
+### 官方 Vertex API 渠道（按量计费）
 
-### 官方 API 渠道（按量计费）
-
-直连 Google 官方接口，按 token 计费，价格为**官方价的 8 折**。
+按 Token（词元/上下文大小）计费，价格为**官方价的 8 折**。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
-| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56<br><small>2026-12-01 起：¥22.4 / ¥112</small> | $2 / $10<br><small>起：$4 / $20</small> |
-| Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21<br><small>2027-01-01 起：¥8.4 / ¥42</small> | $0.75 / $3.75<br><small>起：$1.50 / $7.50</small> |
-| Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash | 同 Gemini 3.8 Flash |
-| Gemini 3.6 Flash | `Gemini-3.6-Flash [按量][官方API/8折]` | 同 Gemini 3.8 Flash（无 1 小时缓存写入） | 同 Gemini 3.8 Flash |
+| Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
+| Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
+| Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
+| Gemini 3.6 Flash | `Gemini-3.6-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
 | Gemini 3.5 Flash | `Gemini-3.5-Flash [按量][官方API/8折]` | ¥8.4 / ¥50.4 | $1.50 / $9 |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro [按量][官方API/8折]` | ¥11.2 / ¥67.2（≤200K）<br>¥22.4 / ¥100.8（>200K） | $2 / $12<br>$4 / $18 |
 | Gemini 2.5 Pro | `Gemini-2.5-Pro [按量][官方API/8折]` | ¥7 / ¥56（≤200K）<br>¥14 / ¥84（>200K） | $1.25 / $10<br>$2.50 / $15 |
 
+> Gemini 4 Argon 自 2026-12-01、Gemini 3.8 Flash 自 2027-01-01 起将回到标准价，现在的价格为半价优惠。
+>
+> 官方规定 Gemini 3.1 Pro 和 Gemini 2.5 Pro 的输入长度超过阈值时，整次请求按高价档计费。
+
 > **缓存**：读取（命中）按输入价的 **10%**（Gemini 4 Argon 为 **5%**）。
+>
 > **1 小时缓存写入**：Gemini 3.7 / 3.8 Flash 为 ¥2.8（2027-01-01 起 ¥5.6），Gemini 3.1 Pro 为 ¥25.2；其余模型无单独报价。
-> 输入长度超过阈值时，**整次请求**按高价档计费。
 
 ## 国产模型
 
-全部为**官方 8 折**，按量计费。价格格式为**优惠价（官方价，元/百万 token）**；官方价来自厂商官网，官方调价频繁，以官网为准。
+全部为**官方 8 折**，按量计费。价格格式为**优惠价（官方价，元/百万 token）**，官方价取自厂商官网。
 
 ### DeepSeek
 
