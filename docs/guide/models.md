@@ -105,7 +105,7 @@ outline: deep
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
 | Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
-| Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.3 额度 / 次（约 ¥0.018） |
+| Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.6 额度 / 次（约 ¥0.036） |
 
 ### 官方 Vertex API 渠道（按量计费）
 
