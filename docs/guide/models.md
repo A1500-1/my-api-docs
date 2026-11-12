@@ -26,7 +26,7 @@ outline: deep
 
 ### Claude Code 渠道
 
-按 Token 用量计费，价格按官方美元价以 **1 美元 = 2 元**折算。
+「Claude Code」渠道与无后缀模型 ID 为同一个渠道，按 Token 用量计费，价格按官方价以 **1 美元 = 2 元**折算。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
