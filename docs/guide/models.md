@@ -119,7 +119,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | --- | --- | --- |
 | Gemini 4 Carbon | `Gemini-4-Carbon/Playground` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 4 Argon | `Gemini-4-Argon/Playground` | 7 额度 / 次（约 ¥0.42） |
-| Gemini 3.8 Flash | `Gemini-3.8-Flash/Playground` | 0.3 额度 / 次（约 ¥0.018） |
+| Gemini 3.8 Flash | `Gemini-3.8-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash/Playground` | 0.3 额度 / 次（约 ¥0.018） |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro/Playground` | 1.8 额度 / 次（约 ¥0.108） |
 
