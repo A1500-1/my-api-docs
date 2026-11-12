@@ -4,7 +4,7 @@ outline: deep
 
 # 模型列表
 
-更新于 **2026-11-12**，以 API 实际模型列表为准。
+更新于 **2026-11-13**，以 API 实际模型列表为准。
 
 支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。
 
@@ -113,6 +113,7 @@ outline: deep
 | --- | --- | --- |
 | Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
+| Gemini 4 Hydrogen<Badge type="tip" text="新" /> | `Gemini-4-Hydrogen/Antigravity` | 1.2 额度 / 次（约 ¥0.072） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.6 额度 / 次（约 ¥0.036） |
 
 ### Playground 渠道（测试）
@@ -123,6 +124,7 @@ outline: deep
 | --- | --- | --- |
 | Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon/Playground` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 4 Argon | `Gemini-4-Argon/Playground` | 7 额度 / 次（约 ¥0.42） |
+| Gemini 4 Hydrogen<Badge type="tip" text="新" /> | `Gemini-4-Hydrogen/Playground` | 1.2 额度 / 次（约 ¥0.072） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro/Playground` | 1.8 额度 / 次（约 ¥0.108） |
@@ -135,6 +137,7 @@ Vertex等官方API渠道，按 Token 用量计费，价格为**官方价的 8 �
 | --- | --- | --- | --- |
 | Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
 | Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
+| Gemini 4 Hydrogen<Badge type="tip" text="新" /> | `Gemini-4-Hydrogen [按量][官方API/8折]` | ¥8.4 / ¥42 | $1.5 / $7.5 |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
 | Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
@@ -144,7 +147,7 @@ Vertex等官方API渠道，按 Token 用量计费，价格为**官方价的 8 �
 > **当前半价优惠**：Carbon / Argon 至 2026-11-30，3.8 Flash 至 2026-12-31；之后恢复标准价。
 
 > **缓存**：
-> - 读取：输入价的 10%，Carbon / Argon 为 5%。
+> - 读取：输入价的 10%，Carbon / Argon / Hydrogen 为 5%。
 > - 1 小时缓存写入：3.7 / 3.8 Flash 为 ¥2.8（2027-01-01 起 ¥5.6），3.1 Pro 为 ¥25.2，单位为每百万 Token；其余模型暂无单独报价。
 
 Gemini 官方价：[Google API 价格表](https://aistudio.google.com/docs/pricing)。
