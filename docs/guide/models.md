@@ -111,7 +111,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.6 额度 / 次（约 ¥0.036） |
 
-### Playground 渠道
+### Playground 渠道（测试）
 
 按调用次数计费。人民币按全模型额度卡 1 额度 = 0.06 元换算。
 
