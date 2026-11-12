@@ -4,7 +4,7 @@ outline: deep
 
 # 模型列表
 
-支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。选择模型后，复制表格中的完整模型 ID 即可使用。
+支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
