@@ -81,12 +81,12 @@ outline: deep
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
 | Claude 5.5 Opus | `Claude-5-5-Opus/Kiro [0.4x][按量]` | ¥1.6 / ¥8 | $4 / $20 |
+| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 | Claude 5 Opus | `Claude-5-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
+| Claude 5 Sonnet | `Claude-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 | Claude 4.8 Opus | `Claude-4-8-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
 | Claude 4.7 Opus | `Claude-4-7-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
 | Claude 4.6 Opus | `Claude-4-6-Opus/Kiro [0.4x][按量]` | ¥2 / ¥10 | $5 / $25 |
-| Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
-| Claude 5 Sonnet | `Claude-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 
 > **缓存**：读取为输入价的 10%（Claude 5.5 系列为 5%）；5 分钟写入为 125%，Claude 5.5 系列另支持 1 小时写入，为 200%。
 
