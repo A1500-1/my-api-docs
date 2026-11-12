@@ -1,4 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { writeFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
+
+const SITE_VERSION = new Date().toISOString()
 
 const SITE_URL = 'https://doc.meow61.my'
 const SITE_NAME = '水秋喵 API使用教程'
@@ -30,7 +34,11 @@ export default defineConfig({
       ['meta', { property: 'og:description', content: desc }]
     ]
   },
+  async buildEnd({ outDir }) {
+    await writeFile(resolve(outDir, 'version.json'), JSON.stringify({ version: SITE_VERSION }))
+  },
   vite: {
+    define: { __SITE_VERSION__: JSON.stringify(SITE_VERSION) },
     server: {
       watch: {
         // 忽略 VitePress 的临时目录，避免 Windows 下 EBUSY 崩溃。
