@@ -6,7 +6,12 @@ outline: deep
 
 支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。
 
-> **快速跳转**：[Claude](#claude) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
+<nav class="model-nav" aria-label="模型分类">
+  <a href="#claude">Claude</a>
+  <a href="#gemini">Gemini</a>
+  <a href="#国产模型">国产模型</a>
+  <a href="#grok">Grok</a>
+</nav>
 
 ::: tip 查询余额与使用记录
 地址：[https://check.meow61.my](https://check.meow61.my)
