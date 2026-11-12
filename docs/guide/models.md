@@ -105,7 +105,7 @@ Fable 5.2 官方价：[Anthropic 发布说明](https://www.anthropic.com/claude-
 
 ## Gemini
 
-按次计费可选 **Antigravity（反重力）**或 **Playground（测试）**，按 Token 用量计费可选 **官方 Vertex API**。
+按次计费可选 **Antigravity（反重力）** 或 **Playground（测试）**；按 Token 用量计费可选 **官方 Vertex API**。
 
 ### Antigravity（反重力）渠道
 
