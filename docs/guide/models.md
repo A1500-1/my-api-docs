@@ -4,23 +4,23 @@ outline: deep
 
 # 模型列表
 
-> 本站 API 提供的模型一览。\
-> 所有模型均可使用 OpenAI 兼容接口（Chat Completions），Claude 系列同时支持 Anthropic 接口，Gemini 系列支持 Gemini 原生接口。\
-> 可直接在酒馆 / ChatBox / Cherry Studio / RikkaHub 等客户端中使用。
+支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。选择模型后，复制表格中的完整模型 ID 即可使用。
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
-::: tip 剩余额度与使用记录查询
-地址：[https://check.meow61.my](https://check.meow61.my)
-
-金额单位为额度，100 额度 = 6 元，例如 $10 实际为 0.6 元。
+::: tip 额度与消费查询
+[查询余额和使用记录](https://check.meow61.my)。查询页的 `$` 表示额度，100 额度 = 6 元，显示 `$10` 即 10 额度，折合 0.6 元。
 :::
 
 ## 价格怎么看
 
-表格价格单位是**元 / 百万 token**。「优惠价」是你实付的价；「官方价」是官网标价，方便对比。
+- **按量计费**：按输入、输出的 Token 用量扣费，表格单位为每百万 Token。
+- **按次计费**：每次调用扣固定额度，表格直接列出单次价格。
+- **优惠价**是实付价，**官方价**用于对比；`¥` 表示人民币，`$` 表示美元。
 
-模型与渠道价格于 2026-11-12 对照 API 模型列表及价格配置核对；按量价格为约数，实际消费以调用记录为准。
+按次价格的人民币换算以全模型额度卡为准。套餐规则见[购买与套餐](/buy)。
+
+更新于 **2026-11-12**。按量价格为约数，实际消费以调用记录为准。
 
 ## Claude 系列
 
@@ -41,14 +41,15 @@ outline: deep
 | Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
 | Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking` | ¥6 / ¥30 | $3 / $15 |
 
-> **缓存读取（命中）**：输入价的 10%，Claude 5.5 Opus / Sonnet 5%，Claude 5.1 / 5.2 Fable 2.5%。\
-> **缓存写入（5 分钟）**：输入价的 125%；Claude 5.5 系列与 5.1 / 5.2 Fable 支持 1 小时，200%。
+> **缓存**（以下比例均以输入价为基准）：
+> - 读取：通常为 10%；Claude 5.5 Opus / Sonnet 为 5%，Claude 5.1 / 5.2 Fable 为 2.5%。
+> - 写入：5 分钟为 125%；Claude 5.5 系列、5.1 / 5.2 Fable 另支持 1 小时，为 200%。
 >
-> 缓存按提示词前缀匹配，前缀内容有任何变动即失效。
+> 缓存按重复的提示词前缀匹配。
 
 ### Anthropic 渠道
 
-按量计费，**7 元兑 1 美元**，直连官方 API，很贵！
+直连 Anthropic 官方 API，按 Token 用量计费，价格按官方价以 **1 美元 = 7 元**折算。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
@@ -64,11 +65,11 @@ outline: deep
 | Claude 4.6 Opus | `Claude-4-6-Opus/Anthropic [7r:1$][按量][官方API]` | ¥35 / ¥175 | $5 / $25 |
 | Claude 4.6 Sonnet | `Claude-4-6-Sonnet/Anthropic [7r:1$][按量][官方API]` | ¥21 / ¥105 | $3 / $15 |
 
-> 缓存：读取按输入价 10%（Claude 5.5 系列 5%、Claude 5.1 / 5.2 Fable 2.5%），写入 125%。
+> **缓存**：读取为输入价的 10%（Claude 5.5 系列为 5%，Claude 5.1 / 5.2 Fable 为 2.5%）；写入为输入价的 125%。
 
 ### Kiro 渠道
 
-**0.4x**（官方价的 0.4 倍）· 按量。
+按 Token 用量计费，渠道倍率 **0.4x**，价格见下表。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
@@ -80,28 +81,28 @@ outline: deep
 | Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 | Claude 5 Sonnet | `Claude-5-Sonnet/Kiro [0.4x][按量]` | ¥0.8 / ¥4 | $2 / $10 |
 
-> 缓存：读取按输入价 10%（Claude 5.5 系列 5%），写入 125%（Claude 5.5 系列另支持 1 小时缓存写入 200%）。
+> **缓存**：读取为输入价的 10%（Claude 5.5 系列为 5%）；5 分钟写入为 125%，Claude 5.5 系列另支持 1 小时写入，为 200%。
 
 ### Antigravity 渠道
 
-**0.4x** · 按量。
+按 Token 用量计费，渠道倍率 **0.4x**，价格见下表。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
 | Claude 5.5 Opus | `Claude-5-5-Opus/Antigravity [按量][0.4x]` | ¥1.6 / ¥8 | $4 / $20 |
 | Claude 5.5 Sonnet | `Claude-5-5-Sonnet/Antigravity [按量][0.4x]` | ¥0.8 / ¥4 | $2 / $10 |
 
-> 缓存：读取按输入价 10%（Claude 5.5 系列 5%），写入 125%（Claude 5.5 系列另支持 1 小时缓存写入 200%）。
+> **缓存**：读取为输入价的 10%（Claude 5.5 系列为 5%）；5 分钟写入为 125%，Claude 5.5 系列另支持 1 小时写入，为 200%。
 
-> Fable 5.2 官方价来源：[Anthropic 发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-2)。
+Fable 5.2 官方价：[Anthropic 发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-2)。
 
 ## Gemini
 
-Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三个渠道；前两者按次计费，Vertex API 按 Token 计费。
+按次计费可选 **Antigravity（反重力）**或 **Playground（测试）**，按 Token 用量计费可选 **官方 Vertex API**。
 
 ### Antigravity（反重力）渠道
 
-仅按调用次数计费。
+按调用次数计费，单次价格见下表。
 
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
@@ -111,7 +112,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 
 ### Playground 渠道（测试）
 
-按调用次数计费。人民币按全模型额度卡 1 额度 = 0.06 元换算。
+测试渠道，按调用次数计费，单次价格见下表。
 
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
@@ -123,7 +124,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 
 ### 官方 Vertex API 渠道（按量计费）
 
-按 Token（词元/上下文大小）计费，价格为**官方价的 8 折**。
+按 Token 用量计费，价格为**官方价的 8 折**。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
@@ -135,19 +136,19 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | Gemini 3.5 Flash | `Gemini-3.5-Flash [按量][官方API/8折]` | ¥8.4 / ¥50.4 | $1.50 / $9 |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro [按量][官方API/8折]` | ¥11.2 / ¥67.2（≤200K）<br>¥22.4 / ¥100.8（>200K） | $2 / $12<br>$4 / $18 |
 
-> Gemini 4 Carbon / Argon 自 2026-12-01、Gemini 3.8 Flash 自 2027-01-01 起将回到标准价，现在的价格为半价优惠。
->
-> 官方规定 Gemini 3.1 Pro 的输入长度超过 200K 时，整次请求按高价档计费。
+> **计费条件**：
+> - 当前半价优惠：Carbon / Argon 至 2026-11-30，3.8 Flash 至 2026-12-31；之后恢复标准价。
+> - Gemini 3.1 Pro 输入超过 200K Token 时，整次请求按高价档计费。
 
-> **缓存**：读取（命中）按输入价的 **10%**（Gemini 4 Carbon / Argon 为 **5%**）。
->
-> **1 小时缓存写入**：Gemini 3.7 / 3.8 Flash 为 ¥2.8（2027-01-01 起 ¥5.6），Gemini 3.1 Pro 为 ¥25.2；其余模型无单独报价。
+> **缓存**：
+> - 读取：输入价的 10%，Carbon / Argon 为 5%。
+> - 1 小时缓存写入：3.7 / 3.8 Flash 为 ¥2.8（2027-01-01 起 ¥5.6），3.1 Pro 为 ¥25.2，单位为每百万 Token；其余模型暂无单独报价。
 
-> Gemini 官方价来源：[Google API 价格表](https://aistudio.google.com/docs/pricing)。
+Gemini 官方价：[Google API 价格表](https://aistudio.google.com/docs/pricing)。
 
 ## 国产模型
 
-全部为**官方 8 折**，按量计费。价格格式为**优惠价（官方价，元/百万 token）**，官方价取自厂商官网。
+按 Token 用量计费，价格为**官方价的 8 折**。以下表格统一使用 **优惠价（官方价）**，单位为**元 / 百万 Token**。
 
 ### DeepSeek
 
@@ -158,7 +159,9 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | `DeepSeek-V4-Pro [官方8折][按量]` | 空闲时段 | ¥0.12（¥0.15） | ¥3.6（¥4.5） | ¥10.8（¥13.5） |
 | | 高峰时段 | ¥0.24（¥0.30） | ¥7.2（¥9） | ¥21.6（¥27） |
 
-> 高峰时段为北京时间**周一至周五（不含中国法定节假日）9:00-12:00、14:00-18:00**；其余时段，包括周末与法定节假日全天，均为空闲时段，价格约为高峰时段的一半。单位：¥/百万 token，价格格式为**优惠价（官方价）**。官方价来源：[DeepSeek 官方价格表](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)。
+> **高峰时段**：北京时间周一至周五 9:00–12:00、14:00–18:00（中国法定节假日除外）。其余时间按空闲价计费，约为高峰价的一半。
+
+官方价：[DeepSeek 价格表](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)。
 
 ### GLM
 
@@ -167,7 +170,9 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | `GLM-5.3 [官方8折][按量]` | 全部 | ¥1.6（¥2） | ¥6.4（¥8） | ¥22.4（¥28） |
 | `GLM-5.3-Flash [官方8折][按量]` | 全部 | ¥0.184（¥0.23） | ¥0.64（¥0.8） | ¥2.24（¥2.8） |
 
-> 单位：¥/百万 token，价格格式为**优惠价（官方价）**。GLM-5.3-Flash 在 2026-09-09 之前有过半价优惠期，该优惠已结束，上表为标准价。GLM 系列另单独收取**缓存写入**费用，按输入价（缓存未命中）计费。官方价来源：[智谱官方价格页](https://docs.bigmodel.cn/cn/guide/start/pricing)。
+> **缓存写入**：按输入价（缓存未命中）另行收费。
+
+官方价：[智谱价格表](https://docs.bigmodel.cn/cn/guide/start/pricing)。
 
 ### Kimi
 
@@ -177,7 +182,9 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | `Kimi-K3.1-Pro-HighSpeed [官方8折][按量]` | ¥1.04（¥1.3） | ¥20.8（¥26） | ¥108.8（¥136） |
 | `Kimi-K3 [官方8折][按量]` | ¥1.6（¥2） | ¥16（¥20） | ¥80（¥100） |
 
-> 单位：¥/百万 token，价格格式为**优惠价（官方价）**。Kimi K3 系列另收取**缓存写入**费用：5 分钟档按各自输入价（缓存未命中），1 小时档为该价格的 2 倍。新增 K3.1 两款价格依据渠道计费配置，括号内价格按渠道的官方 8 折规则换算。官方价来源：[Kimi 官方定价文档](https://platform.kimi.com/docs/pricing/chat)。
+> **缓存写入**：5 分钟按输入价（缓存未命中）另行收费，1 小时为该价格的 2 倍。
+
+K3.1 两款价格依据渠道计费配置，括号内价格按 8 折规则换算。官方定价说明：[Kimi 价格文档](https://platform.kimi.com/docs/pricing/chat)。
 
 ### MiniMax
 
@@ -186,23 +193,34 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 | `MiniMax-M3 [官方8折][按量]` | ≤512K | ¥0.336（¥0.42） | ¥1.68（¥2.10） | ¥6.72（¥8.40） |
 | | >512K | ¥0.672（¥0.84） | ¥3.36（¥4.20） | ¥13.44（¥16.80） |
 
-> 单位：¥/百万 token，价格格式为**优惠价（官方价）**。MiniMax 官网标价为 ¥4.20 / ¥8.40（输入·缓存未命中），官方另有**永久五折**，上表官方价即五折后的实际价格。输入超过 512K 时**整次请求**按高价档计费。官方价来源：[MiniMax 官方计费文档](https://platform.minimax.cn/docs/pricing/overview)。
+> **长上下文**：输入超过 512K Token 时，整次请求按高价档计费。
+>
+> 表中官方价已计入官方永久五折优惠，本站再按该价格的 8 折计费。
+
+官方价：[MiniMax 计费文档](https://platform.minimax.cn/docs/pricing/overview)。
 
 ## Grok
+
+按 Token 用量计费，渠道倍率 **0.4x**。表格使用**优惠价（官方价）**：优惠价为人民币，官方价为美元，单位均为每百万 Token。
 
 | 模型 ID | 提示长度 | 输入<br><small>缓存命中</small> | 输入<br><small>缓存未命中</small> | 输出 |
 | --- | --- | --- | --- | --- |
 | `Grok-4.7/Heavy [按量][0.4x]`<br>`Grok-4.6/Heavy [按量][0.4x]` | <200K | ¥0.2（$0.50） | ¥0.8（$2.00） | ¥2.4（$6.00） |
 | | ≥200K | ¥0.4（$1.00） | ¥1.6（$4.00） | ¥4.8（$12.00） |
 
-> 价格格式为**优惠价（官方价）**；本站按官方价 **0.4x** 销售，优惠价单位为人民币元，官方价为 xAI 美元定价。缓存写入（5 分钟）按输入价计费；提示 ≥200K 时**整次请求**按长文本档计费。
+> **缓存写入**：5 分钟按输入价计费。
+>
+> **长上下文**：提示达到 200K Token 时，整次请求按高价档计费。
 
 ## 使用说明
 
-- 具体接入方法见 [API使用教程](./)
-- 客户端模型列表为空时，可手动输入模型的 ID
-- 价格以购买页面实际显示为准
-- 模型 ID 中的 `[官方8折]`、`[0.4x]`、`[7r:1$]`、`[按量]` 等即对应的计费方式与渠道折扣，与上表价格一致
-- 表格中同价的「`-thinking`」版本与「无后缀」版本均为独立可调用的模型 ID，按上表价格计费
-- Claude 系列同时支持 Anthropic 接口（`/v1/messages`），Gemini 系列支持 Gemini 原生接口（`/v1beta/models/{model}:generateContent`），其余场景用 OpenAI 兼容接口（`/v1/chat/completions`）即可
-- OpenAI 的新版 **Responses API**（`/v1/responses`）也可用：**Gemini / Grok / DeepSeek / GLM / Kimi / MiniMax 支持**（含流式）；**Claude 全系暂不支持**（会返回 `not implemented`），请改用 `/v1/chat/completions` 或 `/v1/messages`
+复制表格中的完整模型 ID；其中的渠道后缀、方括号标记均属于 ID。客户端列表为空时，可手动填写。`-thinking` 版本可独立调用，价格见对应模型行。
+
+### 接口支持
+
+- **OpenAI 兼容接口**（`/v1/chat/completions`）：所有模型均可使用。
+- **Anthropic 接口**（`/v1/messages`）：Claude 系列可使用。
+- **Gemini 原生接口**（`/v1beta/models/{model}:generateContent`）：Gemini 系列可使用。
+- **Responses API**（`/v1/responses`）：Gemini、Grok、DeepSeek、GLM、Kimi、MiniMax 可使用，支持流式输出；Claude 请使用前两种接口。
+
+接入步骤见 [API 使用教程](./)，套餐与购买规则见[购买与套餐](/buy)。
