@@ -6,7 +6,7 @@ outline: deep
 
 支持酒馆、ChatBox、Cherry Studio、RikkaHub 等客户端。
 
-> **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
+> **快速跳转**：[Claude](#claude) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
 ::: tip 查询余额与使用记录
 地址：[https://check.meow61.my](https://check.meow61.my)
@@ -24,7 +24,7 @@ outline: deep
 
 更新于 **2026-11-12**。按量价格为约数，实际消费以调用记录为准。
 
-## Claude 系列
+## Claude
 
 ### Claude Code 渠道
 
