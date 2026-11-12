@@ -5,13 +5,37 @@ const interval = 60_000
 
 export function startAutoUpdate() {
   const currentUrl = new URL(window.location.href)
-  if (currentUrl.searchParams.get(refreshParam) === __SITE_VERSION__) {
+  if (currentUrl.searchParams.get(refreshParam)?.startsWith(`${__SITE_VERSION__}:`)) {
     currentUrl.searchParams.delete(refreshParam)
     window.history.replaceState(window.history.state, '', currentUrl)
   }
 
   let checking = false
   let refreshing = false
+  let availableVersion = ''
+  let notice: HTMLDivElement | undefined
+
+  function showUpdate(version: string) {
+    availableVersion = version
+    if (notice) return
+    notice = document.createElement('div')
+    notice.className = 'site-update-notice'
+    notice.setAttribute('role', 'status')
+    const button = document.createElement('button')
+    button.type = 'button'
+    button.textContent = '页面已更新，点击刷新'
+    button.addEventListener('click', () => {
+      const target = new URL(window.location.href)
+      // 每次点击使用独立地址，部署传播期间再次点击也能重新获取页面。
+      target.searchParams.set(refreshParam, `${availableVersion}:${Date.now()}`)
+      refreshing = true
+      button.disabled = true
+      button.textContent = '正在刷新…'
+      window.location.replace(target)
+    })
+    notice.append(button)
+    document.body.append(notice)
+  }
 
   async function checkVersion() {
     if (checking || refreshing || document.visibilityState !== 'visible') return
@@ -26,12 +50,7 @@ export function startAutoUpdate() {
       if (!response.ok) return
       const { version } = await response.json()
       if (typeof version !== 'string' || !version || version === __SITE_VERSION__) return
-      const target = new URL(window.location.href)
-      // 部署传播期间 HTML 可能落后于版本文件，同一版本只自动跳转一次。
-      if (target.searchParams.get(refreshParam) === version) return
-      target.searchParams.set(refreshParam, version)
-      refreshing = true
-      window.location.replace(target)
+      showUpdate(version)
     } catch {
       // 网络恢复后继续检查，当前页面保持可读。
     } finally {
