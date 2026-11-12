@@ -105,7 +105,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
-| Gemini 4 Carbon | `Gemini-4-Carbon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
+| Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 4 Argon | `Gemini-4-Argon/Antigravity` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Antigravity` | 0.6 额度 / 次（约 ¥0.036） |
 
@@ -115,7 +115,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 
 | 模型版本 | 模型 ID | 计费 |
 | --- | --- | --- |
-| Gemini 4 Carbon | `Gemini-4-Carbon/Playground` | 7 额度 / 次（约 ¥0.42） |
+| Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon/Playground` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 4 Argon | `Gemini-4-Argon/Playground` | 7 额度 / 次（约 ¥0.42） |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
 | Gemini 3.6 Flash | `Gemini-3.6-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
@@ -127,7 +127,7 @@ Gemini 提供 Antigravity（反重力）、Playground 和官方 Vertex API 三�
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
-| Gemini 4 Carbon | `Gemini-4-Carbon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
+| Gemini 4 Carbon<Badge type="tip" text="新" /> | `Gemini-4-Carbon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
 | Gemini 4 Argon | `Gemini-4-Argon [按量][官方API/8折]` | ¥11.2 / ¥56 | $2 / $10 |
 | Gemini 3.8 Flash | `Gemini-3.8-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
 | Gemini 3.7 Flash | `Gemini-3.7-Flash [按量][官方API/8折]` | ¥4.2 / ¥21 | $0.75 / $3.75 |
