@@ -8,8 +8,10 @@ outline: deep
 
 > **快速跳转**：[Claude 系列](#claude-系列) · [Gemini](#gemini) · [国产模型](#国产模型) · [Grok](#grok)
 
-::: tip 额度与消费查询
-[查询余额和使用记录](https://check.meow61.my)。查询页的 `$` 表示额度，100 额度 = 6 元，显示 `$10` 即 10 额度，折合 0.6 元。
+::: tip 查询余额与使用记录
+地址：[https://check.meow61.my](https://check.meow61.my)
+
+`$` 表示额度，100 额度 = 6 元。
 :::
 
 ## 价格怎么看
