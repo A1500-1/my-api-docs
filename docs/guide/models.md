@@ -127,9 +127,9 @@ outline: deep
 | Gemini 3.6 Flash | `Gemini-3.6-Flash/Playground` | 0.6 额度 / 次（约 ¥0.036） |
 | Gemini 3.1 Pro | `Gemini-3.1-Pro/Playground` | 1.8 额度 / 次（约 ¥0.108） |
 
-### 官方 Vertex API 渠道（按量计费）
+### 官方API 渠道（按量计费）
 
-按 Token 用量计费，价格为**官方价的 8 折**。
+Vertex等官方API渠道，按 Token 用量计费，价格为**官方价的 8 折**。
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
