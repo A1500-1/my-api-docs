@@ -101,8 +101,6 @@ outline: deep
 
 > **缓存**：读取为输入价的 10%（Claude 5.5 系列为 5%）；5 分钟写入为 125%，Claude 5.5 系列另支持 1 小时写入，为 200%。
 
-Fable 5.2 官方价：[Anthropic 发布说明](https://www.anthropic.com/claude-fable-and-mythos-5-2)。
-
 ## Gemini
 
 按次计费可选 **Antigravity（反重力）** 或 **Playground（测试）**；按 Token 用量计费可选 **官方 Vertex API**。
