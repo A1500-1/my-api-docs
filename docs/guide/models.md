@@ -13,11 +13,13 @@ outline: deep
   <a href="#grok">Grok</a>
 </nav>
 
-::: tip 查询余额与使用记录
-地址：[https://check.meow61.my](https://check.meow61.my)
+<div class="tip custom-block">
 
-`$` 表示额度，100 额度 = 6 元。
-:::
+[查询余额与使用记录: https://check.meow61.my](https://check.meow61.my)
+
+100 额度 = 6 元，查询页的 `$` 表示额度。
+
+</div>
 
 ## 价格怎么看
 
