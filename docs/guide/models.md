@@ -15,19 +15,19 @@ outline: deep
   <a href="#grok">Grok</a>
 </nav>
 
-<div class="tip custom-block">
-
-[查询余额与使用记录: https://check.meow61.my](https://check.meow61.my)
-
-100 额度 = 6 元，查询页的 `$` 表示额度。
-
-</div>
-
 ## 价格说明
 
 - **按量计费**：按输入、输出 Token 扣费，价格单位为**元 / 百万 Token**。
 - **按次计费**：按调用次数扣费，单位为“额度”。
 - **优惠价**是实付价，**官方价**用于对比。
+
+<div class="tip custom-block">
+
+[**查询余额与使用记录: https://check.meow61.my**](https://check.meow61.my/)
+
+100 额度 = 6 元，查询页内的 `$` 表示额度。
+
+</div>
 
 ## Claude
 
