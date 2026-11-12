@@ -32,16 +32,16 @@ outline: deep
 
 | 模型版本 | 模型 ID | 优惠价<br><small>元/百万token<br>输入 / 输出</small> | 官方价<br><small>美元/百万token<br>输入 / 输出</small> |
 | --- | --- | --- | --- |
-| Claude 5.5 Opus | `claude-opus-5-5`<br>`Claude-5-5-Opus/Claude Code` | ¥8 / ¥40 | $4 / $20 |
-| Claude 5.5 Sonnet | `claude-sonnet-5-5`<br>`Claude-5-5-Sonnet/Claude Code` | ¥4 / ¥20 | $2 / $10 |
-| Claude 5.5 Haiku | `claude-haiku-5-5`<br>`Claude-5-5-Haiku/Claude Code` | ¥0.2 / ¥1<br><small>上下文 >100K：¥1 / ¥5</small> | $0.1 / $0.5<br><small>上下文 >100K：$0.5 / $2.5</small> |
-| Claude 5.2 Fable | `claude-fable-5-2`<br>`Claude-5-2-Fable/Claude Code` | ¥16 / ¥80 | $8 / $40 |
-| Claude 5.1 Fable | `claude-fable-5-1`<br>`Claude-5-1-Fable/Claude Code` | ¥20 / ¥100 | $10 / $50 |
-| Claude 5 Fable | `claude-fable-5`<br>`Claude-Fable-5/Claude Code` | ¥20 / ¥100 | $10 / $50 |
-| Claude 5 Sonnet | `claude-sonnet-5`<br>`Claude-5-Sonnet/Claude Code` | ¥4 / ¥20 | $2 / $10 |
-| Claude 5 Opus<br>Claude 4.8 Opus<br>Claude 4.7 Opus | `claude-opus-5`<br>`Claude-5-Opus/Claude Code`<br>`claude-opus-4-8`<br>`Claude-4-8-Opus/Claude Code`<br>`claude-opus-4-7`<br>`Claude-4-7-Opus/Claude Code` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`Claude-4-6-Opus/Claude Code`<br>`claude-opus-4-6-thinking`<br>`Claude-4-6-Opus-Thinking/Claude Code` | ¥10 / ¥50 | $5 / $25 |
-| Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`Claude-4-6-Sonnet/Claude Code`<br>`claude-sonnet-4-6-thinking`<br>`Claude-4-6-Sonnet-Thinking/Claude Code` | ¥6 / ¥30 | $3 / $15 |
+| Claude 5.5 Opus | `claude-opus-5-5` | ¥8 / ¥40 | $4 / $20 |
+| Claude 5.5 Sonnet | `claude-sonnet-5-5` | ¥4 / ¥20 | $2 / $10 |
+| Claude 5.5 Haiku | `claude-haiku-5-5` | ¥0.2 / ¥1<br><small>上下文 >100K：¥1 / ¥5</small> | $0.1 / $0.5<br><small>上下文 >100K：$0.5 / $2.5</small> |
+| Claude 5.2 Fable | `claude-fable-5-2` | ¥16 / ¥80 | $8 / $40 |
+| Claude 5.1 Fable | `claude-fable-5-1` | ¥20 / ¥100 | $10 / $50 |
+| Claude 5 Fable | `claude-fable-5` | ¥20 / ¥100 | $10 / $50 |
+| Claude 5 Sonnet | `claude-sonnet-5` | ¥4 / ¥20 | $2 / $10 |
+| Claude 5 Opus<br>Claude 4.8 Opus<br>Claude 4.7 Opus | `claude-opus-5`<br>`claude-opus-4-8`<br>`claude-opus-4-7` | ¥10 / ¥50 | $5 / $25 |
+| Claude 4.6 Opus<Badge type="tip" text="个人推荐" /> | `claude-opus-4-6`<br>`claude-opus-4-6-thinking` | ¥10 / ¥50 | $5 / $25 |
+| Claude 4.6 Sonnet | `claude-sonnet-4-6`<br>`claude-sonnet-4-6-thinking` | ¥6 / ¥30 | $3 / $15 |
 
 > **缓存读取（命中）**：输入价的 10%，Claude 5.5 Opus / Sonnet 5%，Claude 5.1 / 5.2 Fable 2.5%。\
 > **缓存写入（5 分钟）**：输入价的 125%；Claude 5.5 系列与 5.1 / 5.2 Fable 支持 1 小时，200%。
