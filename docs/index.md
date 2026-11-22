@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "水秋喵"
   text: "API使用教程"
-  tagline: 包含酒馆，ChatBox，CC Switch，Cherry Studio，RikkaHub 等常见平台的使用。
+  tagline: 包含 DeepSeek Harness，酒馆，ChatBox，CC Switch，Cherry Studio，RikkaHub 等常见平台的使用。
   actions:
     - theme: brand
       text: 开始使用
@@ -15,9 +15,13 @@ hero:
       link: /guide/models
     - theme: alt
       text: 进店看看
-      link: https://shop356416683.taobao.com/
+      link: https://shop319152708.taobao.com/
 
 features:
+  - title: DeepSeek Harness
+    details: 添加自定义模型 API，配置水秋喵并获取可用模型。
+    link: /guide/deepseek-harness
+    linkText: 进入教程
   - title: 酒馆 (SillyTavern)
     details: 本地运行的角色扮演聊天前端，教你如何接入 API 并配置模型。
     link: /guide/sillytavern

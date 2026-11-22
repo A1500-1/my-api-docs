@@ -4,6 +4,7 @@
 
 ## 平台列表
 
+- [DeepSeek Harness](./deepseek-harness) — 添加自定义模型 API 并获取可用模型
 - [酒馆 (SillyTavern)](./sillytavern) — 本地运行的角色扮演聊天前端
 - [ChatBox](./chatbox) — 开源跨平台 AI 桌面客户端
 - [CC Switch](./cc-switch) — 多 API 配置一键切换工具

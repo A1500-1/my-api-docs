@@ -64,7 +64,8 @@ export default defineConfig({
       { text: 'API使用教程', link: '/guide/' },
       { text: '模型列表', link: '/guide/models' },
       { text: '购买与套餐', link: '/buy' },
-      { text: '水秋喵的小店', link: 'https://shop356416683.taobao.com/' }
+      { text: '水秋喵', link: 'https://shop356416683.taobao.com/' },
+      { text: '水秋喵的小店', link: 'https://shop319152708.taobao.com/' }
     ],
 
     sidebar: [
@@ -74,6 +75,7 @@ export default defineConfig({
         text: 'API使用教程',
         link: '/guide/',
         items: [
+          { text: 'DeepSeek Harness', link: '/guide/deepseek-harness' },
           { text: '酒馆 (SillyTavern)', link: '/guide/sillytavern' },
           { text: 'ChatBox', link: '/guide/chatbox' },
           { text: 'CC Switch', link: '/guide/cc-switch' },
